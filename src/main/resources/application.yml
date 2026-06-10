@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: spring-agent
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  ai:
+    openai:
+      base-url: ${OPENAI_BASE_URL:https://token-plan-cn.xiaomimimo.com}
+      api-key: ${OPENAI_API_KEY:your-api-key}
+      model: ${OPENAI_MODEL:mimo-v2.5-pro}
+      options:
+        temperature: 0.7
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    com.kevin.agents: DEBUG
+    org.springframework.ai: DEBUG
