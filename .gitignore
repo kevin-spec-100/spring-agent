@@ -17,3 +17,7 @@ target/
 # OS
 .DS_Store
 Thumbs.db
+
+# Documents
+AGENTS.md
+AI工具实操-AI应用开发实战：多智能体交互系统\ +\ 视觉大模型人脸识别.md
